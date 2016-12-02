@@ -98,7 +98,7 @@ public class CaffeineListActivity extends AppCompatActivity implements OnMapRead
                         != PackageManager.PERMISSION_GRANTED) {
 
             ActivityCompat.requestPermissions(this,
-                    new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
+                    new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION},
                     FINE_LOCATION_REQUEST_CODE);
         }
         myLocation = LocationServices.FusedLocationApi.getLastLocation(mGAC);
