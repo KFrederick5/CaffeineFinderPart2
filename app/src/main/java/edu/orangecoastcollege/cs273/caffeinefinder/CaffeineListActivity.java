@@ -73,6 +73,7 @@ public class CaffeineListActivity extends AppCompatActivity implements OnMapRead
                     .addOnConnectionFailedListener(this)
                     .addApi(LocationServices.API)
                     .build();
+            mGAC.connect();
         }
 
         mLocationRequest = LocationRequest.create()
